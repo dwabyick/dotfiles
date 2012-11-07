@@ -1,39 +1,49 @@
 [user]
-  name = Daniel Wabyick
-  email = dwabyick@yahoo.com
+	name = Daniel Wabyick
+	email = dwabyick@adobe.com
 
-[alias]
-  st = status
-  ci = commit
-  br = branch
-  co = checkout
-  df = diff
-  unstage = reset HEAD
-
-[core]
-  filemode = true
-  whitespace = trailing-spacea, space-before-tab
-
-[branch]
-  autosetupmerge = true
 
 [color]
-  ui = auto
+  branch = auto
+  diff = auto
+  status = auto
+	ui = auto
+
+[color "branch"]
+  current = yellow reverse
+  local = yellow
+  remote = green
 
 [color "diff"]
-  meta = blue bold
+  meta = yellow bold
   frag = magenta bold
   old = red bold
   new = green bold
 
 [color "status"]
   added = yellow
-  changed = green bold
-  untracked = blue bold
+  changed = green
+  untracked = cyan
 
-[color "branch"]
-  current = yellow reverse
-  local = yellow bold
-  remote = green bold
-  plain = red bold
+[core]
+	excludesfile = /Users/dwabyick/.gitignore_global
+	autocrlf = input
+	safecrlf = true
+[difftool "sourcetree"]
+	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+	path = 
+[mergetool "sourcetree"]
+	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+	trustExitCode = true
 
+[alias]
+co = checkout
+ci = commit
+st = status
+br = branch
+hist = log --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=short
+type = cat-file -t
+dump = cat-file -p
+show-graph = log --graph --abbrev-commit --pretty=oneline
+[credential]
+	helper = osxkeychain
