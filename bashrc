@@ -122,3 +122,5 @@ PROMPT_COMMAND=_prompt_command
 
 [[ -s "/Users/dwabyick/.rvm/scripts/rvm" ]] && source "/Users/dwabyick/.rvm/scripts/rvm"
 
+
+PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting

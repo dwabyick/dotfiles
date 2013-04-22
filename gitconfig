@@ -3,12 +3,6 @@
 	email = dwabyick@adobe.com
 [core]
 	excludesfile = /Users/dwabyick/.gitignore_global
-[difftool "sourcetree"]
-	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
-	path = 
-[mergetool "sourcetree"]
-	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
-	trustExitCode = true
 [alias]
 	co = checkout
 	br = branch
@@ -17,3 +11,7 @@
 	revert = checkout --
         changes = diff --name-status -r
 	 lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
+[difftool]
+	external = p4diff
+[merge]
+	tool = p4merge
