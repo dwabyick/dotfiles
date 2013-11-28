@@ -1,0 +1,11 @@
+# Dir navigation
+alias ..='cd ..'
+alias ...='cd ../..'
+alias ....='cd ../../..'
+
+# utilities
+alias d="du -f -d=1"
+alias df="df -h"
+alias g="git"
+alias grep='GREP_COLOR="1;37;45" LANG=C grep --color=auto'
+
