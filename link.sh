@@ -6,3 +6,6 @@ ln -sf $PWD/gitconfig ~/.gitconfig
 ln -sf $PWD/gitignore_global ~/.gitignore
 ln -sf $PWD/vimrc ~/.vimrc
 
+mkdir -p ~/.vim/colors
+cp $PWD/solarized.vim ~/.vim/colors/
+
