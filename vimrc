@@ -9,8 +9,8 @@ if &t_Co > 2 || has("gui_running")
 endif
 
 
-colorscheme solarized
 set background=dark
+colorscheme solarized
 
 
 " file encoding options
