@@ -115,12 +115,9 @@ function _prompt_command() {
 }
 PROMPT_COMMAND=_prompt_command
 
-
 # -------------------------------------------------------------
-# RVM
-# ------------------------------------------------------------- 
+# misc
+# -------------------------------------------------------------
 
-[[ -s "/Users/dwabyick/.rvm/scripts/rvm" ]] && source "/Users/dwabyick/.rvm/scripts/rvm"
+ulimit -S -n 2048
 
-PATH=/usr/local/bin:$PATH
-PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
