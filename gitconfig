@@ -2,7 +2,7 @@
 	name = Daniel Wabyick
 	email = dwabyick@adobe.com
 [core]
-	excludesfile = /Users/dwabyick/.gitignore_global
+	excludesFile = /Users/dwabyick/.gitignore
 [alias]
 	co = checkout
 	br = branch
@@ -15,9 +15,10 @@
 	external = p4diff
 [merge]
 	tool = p4merge
-[difftool "sourcetree"]
-	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
-	path = 
-[mergetool "sourcetree"]
-	cmd = /Applications/SourceTree.localized/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
-	trustExitCode = true
+[mergetool "p4merge"]
+	  cmd = /Applications/p4merge.app/Contents/MacOS/p4merge "$BASE" "$LOCAL" "$REMOTE" "$MERGED"
+	  keepTemporaries = false
+	  trustExitCode = false
+	  keepBackup = false
+[url "https://"]
+	insteadOf = git://
