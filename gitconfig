@@ -3,6 +3,7 @@
 	email = dwabyick@adobe.com
 [core]
 	excludesFile = /Users/dwabyick/.gitignore
+	editor = /usr/bin/vim
 [alias]
 	co = checkout
 	br = branch
