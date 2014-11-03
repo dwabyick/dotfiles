@@ -1,3 +1,4 @@
+# Setting up the dotfiles for a new machine.
 ln -sf $PWD/aliases ~/.aliases
 ln -sf $PWD/bash_profile ~/.bash_profile
 ln -sf $PWD/bashrc ~/.bashrc
@@ -9,3 +10,4 @@ ln -sf $PWD/vimrc ~/.vimrc
 mkdir -p ~/.vim/colors
 cp $PWD/solarized.vim ~/.vim/colors/
 
+git clone https://github.com/gmarik/vundle.git ~/.vim/bundle/vundle
