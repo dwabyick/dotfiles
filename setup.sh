@@ -10,4 +10,4 @@ ln -sf $PWD/vimrc ~/.vimrc
 mkdir -p ~/.vim/colors
 cp $PWD/solarized.vim ~/.vim/colors/
 
-git clone https://github.com/gmarik/vundle.git ~/.vim/bundle/vundle
+git clone https://github.com/gmarik/vundle.git ~/.vim/bundle/Vundle.vim
