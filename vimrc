@@ -65,4 +65,4 @@ set number
    endif
 
 " enable the mouse
-set mouse=a
+set mouse=v
